@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ฟอร์มลงทะเบียนงานสัมมนา</title>
+</head>
+<body>
+
+<h1>ลงทะเบียนเข้าร่วมงานสัมมนา</h1>
+
+<form action="#" method="post">
+  <fieldset>
+    <legend>ข้อมูลผู้ลงทะเบียน</legend>
+
+    <p>
+      <label for="fullname">ชื่อ-นามสกุล *</label><br>
+      <input type="text" id="fullname" name="fullname"
+             placeholder="เช่น สมชาย ใจดี" required>
+    </p>
+
+    <p>
+      <label for="email">อีเมล *</label><br>
+      <input type="email" id="email" name="email"
+             placeholder="example@email.com" required>
+    </p>
+
+    <p>
+      <label for="phone">เบอร์โทรศัพท์</label><br>
+      <input type="tel" id="phone" name="phone"
+             placeholder="กรอกตัวเลข 10 หลัก"
+             pattern="[0-9]{10}">
+    </p>
+
+    <p>
+      <label for="position">ตำแหน่ง / อาชีพ</label><br>
+      <input type="text" id="position" name="position"
+             placeholder="เช่น นักพัฒนาเว็บ">
+    </p>
+
+    <p>
+      <label for="company">องค์กร / บริษัท</label><br>
+      <input type="text" id="company" name="company"
+             placeholder="เช่น ABC จำกัด">
+    </p>
+
+    <p>
+      <label for="topic">ประเภทงานสัมมนาที่สนใจ *</label><br>
+      <select id="topic" name="topic" required>
+        <option value="">-- กรุณาเลือก --</option>
+        <option value="web">Web Development</option>
+        <option value="mobile">Mobile App Development</option>
+        <option value="data">Data Science</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="message">คำถามเพิ่มเติม / ข้อเสนอแนะ</label><br>
+      <textarea id="message" name="message" rows="4"
+                placeholder="พิมพ์คำถามหรือข้อเสนอแนะของคุณที่นี่..."></textarea>
+    </p>
+
+    <button type="submit">ลงทะเบียน</button>
+
+  </fieldset>
+</form>
+
+</body>
+</html>
